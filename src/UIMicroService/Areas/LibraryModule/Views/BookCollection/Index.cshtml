@@ -1,0 +1,67 @@
+﻿@model VModelLayer.SchoolLibrary.LibraryBookCollectionVm;
+<link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.css" integrity="sha512-A29Sz9/JIcgNtdb1EL3vJh+ApO9evkOOJ1GUQpneK8zCR4D3EHdVcDa8avJhMtpi2fHctnrxsslTylz392YWzA==" crossorigin="anonymous">
+<link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+       @*  change here *@
+        Book collections
+        <small>Index</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a asp-action="Index"  asp-controller="Home" asp-area="dashboard"><i class="fa fa-home badge-danger"></i> Home</a></li>
+    </ol>
+
+</section>
+<partial name="Layouts/Partials/_ActionButtonsPartial" />
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Index Page</h3>
+                    <div class="btn-group pull-right">
+                       @*  change here *@
+                        <button id="refreshIndex" onclick="clearCache();RefreshIndexWithoutCache();" title="Reload data from server." class="btn btn-xs btn-default cacheButton refresh"><span class="glyphicon glyphicon-repeat slow-left-spinner"></span></button>
+                    </div>
+
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <table id="indexDataTable" class="table table-bordered table-hover dataTable">
+                        <thead>
+                        @* change here *@
+                        <tr class="head">
+                            <th>Collection Name</th>
+                            <th>Abbreviation</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</section><!-- /.content -->
+@await Html.PartialAsync("Form", Model)
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.4/datatables.min.js" integrity="sha512-X6UwHx0Ur3ivkMqcmO+KcSnkmGQ2gnG5IivrEHMeY4pNc1GjFgGEAWxlJZGa1l37YwCtIq5LXxZgkw7NB3x6+w==" crossorigin="anonymous"></script>
+    @* Change Here *@
+
+
+    <environment include="Development">
+        <script src="~/js/scope/schoollibrary/BookCollection/BookCollectionCrudOperations.js" asp-append-version="true"></script>
+    </environment>
+    <environment include="Production">
+        <script src="~/js/scope/schoollibrary/BookCollection/BookCollectionCrudOperations.min.js" asp-append-version="true"></script>
+    </environment>
+
+}
+
+
+
+
+

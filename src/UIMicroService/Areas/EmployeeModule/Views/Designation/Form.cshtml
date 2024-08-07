@@ -1,0 +1,69 @@
+﻿@model VModelLayer.EmployeeModule.DesignationsVM
+
+<div class="modal-body">
+    <div class="row">
+        <div class="modal fade" id="modal-default" data-backdrop="static" data-keyboard="false" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form id="modelForm" action="" method="post" class="js-validation">
+                        <div class="modal-header">
+                            <button type="button" id="model-close-x" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                            <h4 class="modal-title">Designations</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box box-primary">
+                                <div class="box-body">
+                                    <partial name="Layouts/Partials/_AlertView" />
+                                    @Html.HiddenFor(a => a.Id, new { @class = "resetdata" })
+                                    @Html.HiddenFor(a => a.DepartmentId, new { @class = "resetdata" })
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <div class="input-select">
+                                                @Html.DropDownListFor(a => a.Department, new List<SelectListItem>
+                                                    (), "Select Department", new { dontsubmit="dontsubmit",required = "required", @class = "first requiredfield", })
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label>Department</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-4">
+                                            <div class="input-field">
+                                                @Html.TextBoxFor(a => a.Name, new { required = "required", @class = "requiredfield", onClick = "this.setSelectionRange(0, this.value.length)", placeholder = " ", @minlength = "2", @maxlength = "50" })
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label for="Name">Designation Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="input-field">
+                                                @Html.TextBoxFor(a => a.AllowedSeats, new { required = "required", @class = "requiredfield", onClick = "this.setSelectionRange(0, this.value.length)", placeholder = " ", @min = "0", @max = "999" })
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label for="AllowedSeats">Allowed Seats</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="input-field">
+                                                @Html.CheckBoxFor(a => a.IsHeadPosition)
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label for="IsHeadPosition">Is Head Position for this Department?</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="crud">
+                            <partial name="Layouts/Partials/_CrudButtonsPartial" />
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

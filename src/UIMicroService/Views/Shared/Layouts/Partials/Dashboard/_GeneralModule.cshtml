@@ -1,0 +1,37 @@
+﻿<section class="content-header">
+    <h1>
+        Dashboard
+        <small>General Modules</small>
+    </h1>
+    <ol class="breadcrumb">
+    </ol>
+</section>
+
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" id="librarymodel">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Language",Area="GeneralModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="language"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Languages</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" id="currencymodel">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Currency",Area="GeneralModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><i class="fa fa-rupee"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Currencies</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div><!-- /.row -->
+    <!-- Main row -->
+</section><!-- /.content -->

@@ -1,0 +1,38 @@
+﻿        <!-- header section strats -->
+<header class="header_section">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" asp-area="Home" asp-controller="Home" asp-action="Index">
+                <img asp-append-version="true" src="~/homelayout/images/logo.png" alt="" />
+                <span>
+                    Scope
+                </span>
+            </a>
+
+            <div class="navbar-collapse" id="">
+                <div class="custom_menu-btn">
+                    <button onclick="openNav()">
+                        <span class="s-1"> </span>
+                        <span class="s-2"> </span>
+                        <span class="s-3"> </span>
+                    </button>
+                </div>
+                <div id="myNav" class="overlay">
+                    
+                    <div class="overlay-content">
+                        <a asp-area="Home" asp-controller="Home" asp-action="Index">HOME</a>
+                        <a asp-area="Home" asp-controller="Home" asp-action="About">ABOUT</a>
+                        <a asp-area="Home" asp-controller="Home" asp-action="Software">Software</a>
+                        <a asp-area="Home" asp-controller="Home" asp-action="Clients">Clients</a>
+                        <a asp-area="Home" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                        <a asp-area="Home" asp-controller="Home" asp-action="Subscription">Subscription</a>
+                    </div>
+                    <div class="overlay-content">
+                        <a asp-area="Identity" asp-controller="Account" asp-action="Login" style="color:yellow">Sign in!</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- end header section -->

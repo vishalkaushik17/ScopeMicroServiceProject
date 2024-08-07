@@ -1,0 +1,39 @@
+﻿@using GenericFunction.Constants.Routes;
+<section class="content-header">
+    <h1>
+        Dashboard
+        <small>Inventory Modules</small>
+    </h1>
+    <ol class="breadcrumb">
+    </ol>
+</section>
+
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" id="productmodel">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Product",Area = "InventoryModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="cube"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Products</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" id="vendormodel">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Vendor",Area = "InventoryModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="cube"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Vendors</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div><!-- /.row -->
+    <!-- Main row -->
+</section><!-- /.content -->

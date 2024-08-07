@@ -1,0 +1,6 @@
+﻿@model VModelLayer.EmployeeModule.BankVM;
+<!-- Content Header (Page header) -->
+<partial name="Layouts/Partials/_ActionButtonsPartial" />
+<!-- Main content -->
+<partial name="Layouts/Partials/_CommonIndexPage" />
+@await Html.PartialAsync("Form", Model)

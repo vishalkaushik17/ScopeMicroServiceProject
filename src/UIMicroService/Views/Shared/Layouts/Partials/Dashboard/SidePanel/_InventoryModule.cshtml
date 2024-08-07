@@ -1,0 +1,15 @@
+﻿<li class="treeview" id="InventoryLi">
+    <a href="#">
+        <i class="fa fa-files-o"></i>
+        <span>Inventory Module</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <li id="Product-InventoryModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Product",Area="InventoryModule"})'><i class="fa fa-circle-o"></i> Products</a>
+        </li>
+        <li id="Vendor-InventoryModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Vendor",Area="InventoryModule"})'><i class="fa fa-circle-o"></i> Vendors</a>
+        </li>
+    </ul>
+</li>

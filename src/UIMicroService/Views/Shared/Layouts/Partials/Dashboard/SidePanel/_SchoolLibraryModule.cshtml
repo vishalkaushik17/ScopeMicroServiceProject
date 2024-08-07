@@ -1,0 +1,25 @@
+﻿<li class="treeview" id="LibraryLI">
+    <a href="#">
+        <i class="fa fa-files-o"></i>
+        <span>Library Module</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <li id="SchoolLibrary-LibraryModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "SchoolLibrary",Area="LibraryModule"})'><i class="fa fa-circle-o"></i> Library Hall</a>
+        </li>
+        <li id="SchoolLibrary-BookMasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "BookMaster",Area="LibraryModule"})'><i class="fa fa-circle-o"></i> Books</a>
+        </li>
+        <li id="Room-LibraryModule"><a asp-action="Index" asp-controller="Room" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Rooms</a></li>
+        <li id="Section-LibraryModule"><a asp-action="Index" asp-controller="Section" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Sections</a></li>
+        <li id="Rack-LibraryModule"><a asp-action="Index" asp-controller="Rack" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Racks</a></li>
+        <li id="Bookshelf-LibraryModule"><a asp-action="Index" asp-controller="Bookshelf" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Bookshelves</a></li>
+        <li id="MediaType-LibraryModule"><a asp-action="Index" asp-controller="MediaType" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Media Type</a></li>
+        <li id="Author-LibraryModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Author",Area="LibraryModule"})'><i class="fa fa-circle-o"></i> Authors</a>
+        </li>
+        <li id="BookCollection-LibraryModule"><a asp-action="Index" asp-controller="BookCollection" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Book Collection</a></li>
+        <li id="Book-LibraryModule"><a asp-action="Index" asp-controller="Book" asp-area="LibraryModule"><i class="fa fa-circle-o"></i> Books</a></li>
+    </ul>
+</li>

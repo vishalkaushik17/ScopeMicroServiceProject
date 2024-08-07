@@ -1,0 +1,206 @@
+[
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/css/skins/_all-skins.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/css/skins/_all-skins.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/css/AdminLTE.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/css/AdminLTE.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/bootstrap/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/bootstrap/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/css/skins/skin-blue-light.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/css/skins/skin-blue-light.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/iCheck/flat/blue.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/iCheck/flat/blue.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/morris/morris.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/morris/morris.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/datepicker/datepicker3.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/datepicker/datepicker3.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/daterangepicker/daterangepicker-bs3.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/daterangepicker/daterangepicker-bs3.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/jvectormap/jquery-jvectormap-1.2.2.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/datatables/dataTables.bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/datatables/dataTables.bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/daterangepicker/daterangepicker.min.js",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/daterangepicker/daterangepicker.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/datepicker/bootstrap-datepicker.min.js",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/datepicker/bootstrap-datepicker.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/js/pages/dashboard.min.js",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/js/pages/dashboard.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/dashboard.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/dashboard.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/commonFunctions.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/commonFunctions.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/sidebarsearch.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/sidebarsearch.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/SchoolLibrary/Author/AuthorCrudOperations.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/SchoolLibrary/Author/AuthorCrudOperations.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/SchoolLibrary/MediaType/MediaTypeCrudOperations.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/SchoolLibrary/MediaType/MediaTypeCrudOperations.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/HomeLayout/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/HomeLayout/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/HomeLayout/css/style.min.css",
+    "inputFiles": [
+      "wwwroot/HomeLayout/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/HomeLayout/css/responsive.min.css",
+    "inputFiles": [
+      "wwwroot/HomeLayout/css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/accessDenied.min.css",
+    "inputFiles": [
+      "wwwroot/css/accessDenied.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/iCheck/line/blue.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/iCheck/line/blue.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/iCheck/minimal/blue.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/iCheck/minimal/blue.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/plugins/iCheck/square/blue.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/plugins/iCheck/square/blue.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/SchoolLibrary/LibraryHall/LibraryHallCrudOperations.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/SchoolLibrary/LibraryHall/LibraryHallCrudOperations.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scope/SchoolLibrary/BookCollection/BookCollectionCrudOperations.min.js",
+    "inputFiles": [
+      "wwwroot/js/scope/SchoolLibrary/BookCollection/BookCollectionCrudOperations.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/layout.min.js",
+    "inputFiles": [
+      "wwwroot/js/layout.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/js/app.min.js",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/js/app.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/adminLte/dist/css/skins/skin-blue.min.css",
+    "inputFiles": [
+      "wwwroot/adminLte/dist/css/skins/skin-blue.css"
+    ]
+  }
+]

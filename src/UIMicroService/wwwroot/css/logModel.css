@@ -1,0 +1,19 @@
+﻿
+#logmodal-default {
+    display: block !important; /* I added this to see the modal, you don't need this */
+}
+
+/*#logModelbox {
+    display: none;*/ /* I added this to see the modal, you don't need this */
+/*}*/
+
+/* Important part */
+.modal-dialog {
+    overflow-y: initial !important
+}
+
+#logModelBody {
+    height: 100vh;
+    overflow-y: scroll;
+    max-height: calc(100vh - 190px);
+}

@@ -1,0 +1,78 @@
+﻿@{
+}
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    string sessionvalue = HttpContextAccessor.HttpContext.Session.GetString("_Token");
+}
+<h1>authorized</h1>
+
+
+
+
+<button name="btn" id="btn">Get data</button>
+<div class="new"></div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function ()  
+    {  
+
+        $("#btn").click(function() {
+            console.log("token: ");    
+            $.ajax(  
+                {  
+                    type: 'GET',  
+                    "Content-type": 'application/json; charset=utf-8',
+                    async: true,
+                    url: 'https://localhost/apigateway/emp',
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Authorization": "Bearer " + "@sessionvalue",
+                        "School" : "Kavya"
+                    },
+                    success:  
+                        function (response) {
+                            console.log
+                                (response);
+                            
+                            $(".new").empty();
+                            var display = response.Data;
+                            //console.log(display);
+                            $.each(display, function (i, member) {
+                                console.log(member.name);
+                                if (member.name !== "Exception") {
+                                    $(".new").append('<div>' + member.name + '</div>');
+                                }
+                                    //console.log(member.name);
+                                    
+                                
+                            });
+                            console.log(display);
+                            console.log(member.name);
+                            $(".new").append('<div>' + JSON.stringify(response.log) + '</div>');
+                        },  
+                    error:  
+                        function (response)  
+                        {                              var data = JSON.parse(response.responseText);
+                            //console.log(response.responseText.Message);
+                            //console.log(response.responseText.message);
+                            console.log(data);
+                            //var display = response.responseText;
+
+                            //console.log("error1");
+                            //console.log(display.);
+                            //$(".new").append('<div>' + JSON.stringify(response.responseText.Message) + '</div>');
+                            //$(".new").append('<div>' + display.message + '</div>');
+                            $(".new").append('<div>' + data.Message + '</div>');
+                            $(".new").append('<div>' + data.Id + '</div>');
+                            $(".new").append('<div>' + data.Host + '</div>');
+                            $(".new").append('<div>' + data.IpAddress + '</div>');
+                            $(".new").append('<div>' + (data.EmailStatus === true?"Email sent to support team!":"Email failed" + data.EmailResponse) + '</div>');
+                        }  
+                });  
+
+        });
+        
+  
+    });  
+</script>

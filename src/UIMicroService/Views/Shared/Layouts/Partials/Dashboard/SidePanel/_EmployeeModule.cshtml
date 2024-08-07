@@ -1,0 +1,24 @@
+﻿<li class="treeview" id="EmployeeLi">
+    <a href="#">
+        <i class="fa fa-files-o"></i>
+        <span>Employee Module</span>
+        <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <li id="Employee-MasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Employee",Area="EmployeeModule"})'><i class="fa fa-circle-o"></i> Employees</a>
+        </li>
+        <li id="EmployeeDegree-MasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Degree",Area="EmployeeModule"})'><i class="fa fa-circle-o"></i> Degree</a>
+        </li>
+        <li id="EmployeeDepartment-MasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Department",Area="EmployeeModule"})'><i class="fa fa-circle-o"></i> Departments</a>
+        </li>
+        <li id="EmployeeDesignation-MasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Designation",Area="EmployeeModule"})'><i class="fa fa-circle-o"></i> Designations</a>
+        </li>
+        <li id="EmployeeBank-MasterModule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Bank",Area="EmployeeModule"})'><i class="fa fa-circle-o"></i> Banks</a>
+        </li>
+    </ul>
+</li>

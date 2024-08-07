@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>CC.UnitOfWorkLayerLibrary</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>VISHAL KAUSHIK</Authors>
+		<Company>Coding Company</Company>
+		<Description>UnitOfWork Layer Library.</Description>
+		<PackageTags>tag1;tag2</PackageTags>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
+		<OutputPath>..\SharedOutput\</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(OS)' != 'Windows_NT'">
+		<OutputPath>../SharedOutput/</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(DOTNET_RUNNING_IN_CONTAINER)' == 'true'">
+		<OutputPath>/app/sharedoutput/</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="SchoolLibrary\**" />
+		<EmbeddedResource Remove="SchoolLibrary\**" />
+		<None Remove="SchoolLibrary\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BusinessLayerLibrary\BSLayerSchool\BSLayerSchool.csproj" />
+		<ProjectReference Include="..\CommonLayerLibrary\GenericFunction.csproj" />
+		<ProjectReference Include="..\DataLayerLibrary\DatabaseLibrary\DatabaseService\DataBaseServices.csproj" />
+	</ItemGroup>
+</Project>

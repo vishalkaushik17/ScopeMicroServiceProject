@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using ScopeCoreWebApp.Methods
+@using ScopeCoreWebApp.Middleware
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var accessEmployeeModule = UserIdentity.CheckUserInRole(HttpContextAccessor?.HttpContext, new string[] { RoleName.Master, RoleName.ErpAdmin, RoleName.AsstHR, RoleName.HR, RoleName.Administrator, RoleName.Principal, RoleName.VicePrincipal, RoleName.Accountants });
+    var accessGeneralModule = UserIdentity.CheckUserInRole(HttpContextAccessor?.HttpContext, new string[] { RoleName.Master, RoleName.ErpAdmin, RoleName.Administrator, RoleName.Principal, RoleName.VicePrincipal });
+    var accessInventoryModule = UserIdentity.CheckUserInRole(HttpContextAccessor?.HttpContext, new string[] { RoleName.Master, RoleName.ErpAdmin, RoleName.Administrator, RoleName.Principal, RoleName.VicePrincipal, RoleName.AsstStore, RoleName.StoreManager, RoleName.HeadStore });
+    var accessSchoolLibraryModule = UserIdentity.CheckUserInRole(HttpContextAccessor?.HttpContext, new string[] { RoleName.Master, RoleName.ErpAdmin, RoleName.Administrator, RoleName.Principal, RoleName.VicePrincipal, RoleName.Librarian, RoleName.AsstLibrarian });
+}
+@if (accessEmployeeModule)
+{
+    <partial name="Layouts/Partials/Dashboard/_EmployeeModule" />
+}
+@if (accessGeneralModule)
+{
+    <partial name="Layouts/Partials/Dashboard/_GeneralModule" />
+}
+@if (accessInventoryModule)
+{
+    <partial name="Layouts/Partials/Dashboard/_InventoryModule" />
+}
+@if (accessSchoolLibraryModule)
+{
+    <partial name="Layouts/Partials/Dashboard/_SchoolLibraryModule" />
+}

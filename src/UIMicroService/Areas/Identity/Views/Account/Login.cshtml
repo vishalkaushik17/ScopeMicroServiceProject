@@ -1,0 +1,84 @@
+﻿@model VModelLayer.LoginModel;
+@{  
+    ViewBag.Title = "Login";  
+}  
+<div class="login-box">
+    <div class="login-logo">
+        <a href="../../index2.html"><b>Scope</b>ERP</a>
+    </div><!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))  
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(a => a.ScopeId)
+            <div class="input-field">
+                
+                @Html.TextBoxFor(a => a.Username,new {required="required",autofocus="autofocus" , @class="requiredfield",placeholder=" "})
+                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                <label>User Name</label>
+            </div>
+            <div class="input-field">
+                @Html.PasswordFor(a => a.Password,new {required="required" , @class="requiredfield",placeholder=" "})
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                <label>Password</label>
+            </div>
+@*            <div class="input-field">
+                @Html.PasswordFor(a => a.Password,new { @class="autoselected notrequiredfield",placeholder=" "})
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                <label>Password</label>
+            </div>
+
+*@
+@*            <div class="input-select">
+                <label>Select</label>
+                <select class="requiredfield">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                </select>
+            </div>
+*@<div class="row">
+                <div class="col-xs-8">
+@*                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+*@                </div><!-- /.col -->
+                <div class="col-xs-4">
+                    <button type="submit" class="ripple-info btn btn-small">Sign In</button>
+@*                    <button type="button" class="ripple-default">Sign In</button>
+                    <button type="button" class="ripple-info">Sign In</button>
+                    <button type="button" class="ripple-warning">Sign In</button>
+*@                </div><!-- /.col -->
+            </div>
+        }
+
+@*        <div class="social-auth-links text-center">
+            <p>- OR -</p>
+            <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
+            <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
+        </div><!-- /.social-auth-links -->
+*@
+        <a href="#">I forgot my password</a><br>
+        <a href="register.html" class="text-center">Unlock my account</a>
+        @if (@Model.Message != null)
+        {
+            <div style="color:orangered; border-top:2px;" class="mt-4">
+                <p class="login-box-msg center-block"><i class="glyphicon glyphicon-exclamation-sign" style="color:red"></i> @Model.Message</p>
+            </div>
+        }
+
+    </div><!-- /.login-box-body -->
+</div><!-- /.login-box -->
+<div id="logs">
+</div>
+
+<script>
+    (function () {
+        document.getElementById('logs').innerHTML = `@Html.Raw(TempData["ExecutionLogs"])`;
+    })();
+</script>

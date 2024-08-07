@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageId>CC.MC.CommonLayerLibrary</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>VISHAL KAUSHIK</Authors>
+	  <Company>Coding Company</Company>
+	  <Description>MemoryCache Common Library.</Description>
+	  <PackageTags>tag1;tag2</PackageTags>
+	  <!--<RepositoryUrl>https://github.com/your-repo</RepositoryUrl>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
+	  <OutputPath>..\..\SharedOutput\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(OS)' != 'Windows_NT'">
+	  <OutputPath>../../SharedOutput/</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(DOTNET_RUNNING_IN_CONTAINER)' == 'true'">
+	  <OutputPath>/app/sharedoutput/</OutputPath>
+  </PropertyGroup>
+	<ItemGroup>
+    <ProjectReference Include="..\..\DataLayerLibrary\CacheDataLibrary\DataCacheLayer.csproj" />
+    <ProjectReference Include="..\..\DataLayerLibrary\DatabaseLibrary\DatabaseService\DataBaseServices.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,5 @@
+﻿@using ModelTemplates.RequestNResponse.Accounts
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+Layout = (HttpContextAccessor?.HttpContext).IsSignedIn() ? "Layouts/_AdminLteLayout" : "Layouts/_HomeLayout";
+}

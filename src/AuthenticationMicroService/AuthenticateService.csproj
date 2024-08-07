@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e30e3e3c-5c91-433d-90cb-5549d72a3a39</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Initializer\**" />
+    <Compile Remove="Persistence\DBConfig\**" />
+    <Compile Remove="Persistence\Middleware\**" />
+    <Content Remove="Initializer\**" />
+    <Content Remove="Persistence\DBConfig\**" />
+    <Content Remove="Persistence\Middleware\**" />
+    <EmbeddedResource Remove="Initializer\**" />
+    <EmbeddedResource Remove="Persistence\DBConfig\**" />
+    <EmbeddedResource Remove="Persistence\Middleware\**" />
+    <None Remove="Initializer\**" />
+    <None Remove="Persistence\DBConfig\**" />
+    <None Remove="Persistence\Middleware\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="header.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="MySql.Data" Version="9.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\BusinessLayerLibrary\BSAuthentication\BSAuthentication.csproj" />
+    <ProjectReference Include="..\Shared\CommonLayerLibrary\GenericFunction.csproj" />
+    <ProjectReference Include="..\Shared\CommonServiceLayer\SharedLibrary.csproj" />
+    <ProjectReference Include="..\Shared\DILayerLibrary\DependencyInjection.csproj" />
+    <ProjectReference Include="..\Shared\IdentityLayerLibrary\IdentityLayer.csproj" />
+    <ProjectReference Include="..\Shared\ModelLayerLibrary\ViewModelLayer\VModelLayer.csproj" />
+    <ProjectReference Include="..\Shared\UnitOfWorkLayerLibrary\UnitOfWork.csproj" />
+  </ItemGroup>
+</Project>

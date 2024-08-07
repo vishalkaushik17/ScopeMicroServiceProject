@@ -1,0 +1,32 @@
+﻿
+<partial name="About" />
+<!-- app section -->
+
+<partial name="Software" />
+<!-- end app section -->
+<!-- client section -->
+<partial name="Clients" />
+<partial name="ContactUs" />
+<partial name="Subscription" />
+<!-- end client section -->
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js" defer></script>
+<script src="~/js/usercount.js" defer></script>
+<script type="text/javascript">
+    document.getElementById("HomeBody").classList.remove("sub_page");
+</script>
+<div class="container">
+    <h3>hello this is signalR</h3>
+    <div class="row">
+        <div class="col-3">Total Views: </div>
+        <div class="col-4">
+            <span id="totalViewsCounter"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">Total Connection/Users: </div>
+        <div class="col-4">
+            <span id="totalUsersCounter"></span>
+        </div>
+    </div>
+
+</div>

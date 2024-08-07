@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Scope ERP| Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="~/adminLte/bootstrap/css/bootstrap.min.css" asp-append-version="true">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/adminLte/dist/css/AdminLTE.min.css" asp-append-version="true">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/adminLte/plugins/iCheck/square/blue.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
+    <!-- Custom CSS For Login Form-->
+    @*<link href="~/css/login.css" rel="stylesheet" />*@
+
+</head>
+<body class="hold-transition login-page">
+    @RenderBody()
+    <!-- jQuery 2.1.4 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="~/adminLte/bootstrap/js/bootstrap.min.js" asp-append-version="true"></script>
+    <!-- iCheck -->
+    <script src="~/adminLte/plugins/iCheck/icheck.min.js" asp-append-version="true"></script>
+@*    <script>
+    $(function () {
+    $('input').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue',
+    increaseArea: '20%' // optional
+    });
+    });
+    </script>
+    *@
+    @await RenderSectionAsync("Scripts",false)
+</body>
+</html>

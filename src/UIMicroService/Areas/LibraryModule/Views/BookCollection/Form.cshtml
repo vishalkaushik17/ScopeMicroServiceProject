@@ -1,0 +1,55 @@
+﻿@model VModelLayer.SchoolLibrary.LibraryBookCollectionVm;
+
+<div class="modal-body">
+    <div class="row">
+        <div class="modal fade" id="modal-default" data-backdrop="static" data-keyboard="false" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   @*  Change here *@
+                    <form id="modelFormBookCollection" action="" method="post" class="js-validation">
+                        <div class="modal-header">
+                            <button type="button" id="model-close-x" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                           @*  Change here *@
+                            <h4 class="modal-title">Book Collection</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box box-primary">
+                                <div class="box-body">
+                                    <partial name="Layouts/Partials/_AlertView" />
+                                    @Html.HiddenFor(a => a.Id, new { @DBValue = "true", @class = "resetdata" })
+                                    @* //Change here in div->col *@
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="input-field">
+                                                @Html.TextBoxFor(a => a.Name, new {required = "required", @class = "first requiredfield", onClick = "this.setSelectionRange(0, this.value.length)", placeholder = " "})
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label>Collection Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="input-field">
+                                                @Html.TextBoxFor(a => a.Abbreviation, new {required = "required", @class = "requiredfield", onClick = "this.setSelectionRange(0, this.value.length)", placeholder = " "})
+                                                <span class="glyphicon glyphicon-key form-control-feedback"></span>
+                                                <label>Collection abbreviation</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="crud">
+                            <partial name="Layouts/Partials/_CrudButtonsPartial"/>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+﻿.productImage {
+    height: 1rem;
+    width: 1rem;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+.alert h4 {
+    font-weight: 600;
+    color: gold;
+}
+.alert > p, .alert > ul {
+    margin-bottom: 0;
+    margin-left: 30px;
+}

@@ -1,0 +1,71 @@
+﻿<section class="content-header">
+    <h1>
+        Dashboard
+        <small>Employee Modules</small>
+    </h1>
+    <ol class="breadcrumb">
+    </ol>
+</section>
+
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" id="departmentmodule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Department",Area="EmployeeModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Departments</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>        
+        <div class="col-md-3 col-sm-6 col-xs-12" id="designationmodule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Designation",Area="EmployeeModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Designations</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" id="employeemodule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Employee",Area="EmployeeModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Employees</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" id="degree-employeemodule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Degree",Area="EmployeeModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Degrees</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12" id="bank-employeemodule">
+            <a Partial_Nav_Link href='#@Url.Action("Index", new {Controller= "Bank",Area="EmployeeModule"})'>
+                <div class="info-box" style="cursor: pointer;">
+                    <span class="info-box-icon bg-aqua"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Banks</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div><!-- /.row -->
+    <!-- Main row -->
+</section><!-- /.content -->
