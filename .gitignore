@@ -17,6 +17,7 @@
 mono_crash.*
 
 # Build results
+src/Shared/SharedOutput/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
