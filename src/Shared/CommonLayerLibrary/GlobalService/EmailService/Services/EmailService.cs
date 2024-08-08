@@ -256,7 +256,7 @@ public class EmailService : IEmailService
 
         string result;
         using (StreamReader reader =
-               new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), @"Templates\Exception\ExceptionPage.html")))
+               new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), @"Templates/Exception/ExceptionPage.html")))
         {
             result = reader.ReadToEnd();
         }

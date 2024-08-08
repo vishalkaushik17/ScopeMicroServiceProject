@@ -39,7 +39,7 @@ COPY NuGetDocker.config /root/.nuget/NuGetDocker.config
 
 # Copy the local NuGet packages to the Docker image
 COPY /src/Shared/SharedOutput/ /root/.nuget/packages/
-COPY /packages/ /root/.nuget/packages/
+#COPY /packages/ /root/.nuget/packages/
 
 
 RUN dotnet restore "./src/AuthenticationMicroService/AuthenticateService.csproj" --configfile /root/.nuget/NuGetDocker.config
