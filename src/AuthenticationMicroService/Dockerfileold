@@ -29,6 +29,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
+#EXPOSE 8080
+#EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -41,7 +43,7 @@ COPY NuGetDocker.config /root/.nuget/NuGetDocker.config
 COPY /src/Shared/SharedOutput/ /root/.nuget/packages/
 COPY /packages/ /root/.nuget/packages/
 
-
+#RUN dotnet restore "./src/AuthenticationMicroService/AuthenticateService.csproj"
 RUN dotnet restore "./src/AuthenticationMicroService/AuthenticateService.csproj" --configfile /root/.nuget/NuGetDocker.config
 COPY . .
 WORKDIR "/src/src/AuthenticationMicroService"
@@ -53,12 +55,10 @@ RUN dotnet publish "./AuthenticateService.csproj" -c $BUILD_CONFIGURATION -o /ap
 
 FROM base AS final
 WORKDIR /app
-
 # Copy the development certificate
-COPY /certs/aspnetcore-devcert.pfx certs/aspnetcore-devcert.pfx
-
+COPY /certs/aspnetcore-devcert.pfx app/certs/aspnetcore-devcert.pfx
 # Expose port 5001 for HTTPS
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8081
+EXPOSE 8080
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "AuthenticateService.dll"]

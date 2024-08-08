@@ -1024,60 +1024,60 @@
     },
     //for Authentication Services
     {
-      "DownstreamPathTemplate": "/authenticateservice/api/v1/Authenticate/login",
+      "DownstreamPathTemplate": "/api/v1/Authenticate/login",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/login",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
-      "DownstreamPathTemplate": "/authenticateservice/api/v1/Authenticate/forgot-password",
+      "DownstreamPathTemplate": "/api/v1/Authenticate/forgot-password",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/forgot-password",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
-      "DownstreamPathTemplate": "/authenticateservice/api/v1/Authenticate/verify-email",
+      "DownstreamPathTemplate": "/api/v1/Authenticate/verify-email",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/verify-email",
       "UpstreamHttpMethod": [ "Post" ]
     },
     {
-      "DownstreamPathTemplate": "/authenticateservice/api/v1/Authenticate/account-confirmation",
+      "DownstreamPathTemplate": "/api/v1/Authenticate/account-confirmation",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/account/confirm-me",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
-      "DownstreamPathTemplate": "/authenticateservice/api/v1/Authenticate/register",
+      "DownstreamPathTemplate": "/api/v1/Authenticate/register",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/register",
@@ -1102,7 +1102,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 443
+          "Port": 8083
         }
       ],
       "UpstreamPathTemplate": "/auth-ping",

@@ -6,21 +6,18 @@ services:
       context: .
       dockerfile: src/APIGatewayMicroService/Dockerfile
     volumes:
-      #- ./LocalNuGetFeed:/root/.nuget/packages
       - /src/Shared/SharedOutput
       - /packages
-      - /certs:/app/certs
+      - /certs:/certs
 
     ports:
-      - "8080:8080"
-      - "8081:8081"
+      - "8080:80"
+      - "8081:443"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: "https://+:8081;http://+:8080"
-      
-
-    # depends_on:
-    #   - authentication-microservice
+    depends_on:
+       - authentication-microservice
     #   - coding-company-microservice
     #   - common-microservice
     #   - employee-microservice
@@ -28,14 +25,22 @@ services:
     #   - school-library-microservice
     #   - ui-microservice
 
-  # authentication-microservice:
-  #   image: authenticationmicroservice
-  #   build:
-  #     context: .
-  #     dockerfile: src/AuthenticationMicroService/Dockerfile
-  #   ports:
-  #     - "8082:80"
-  #     - "8083:443"
+  authentication-microservice:
+    image: authenticationmicroservice
+    build:
+      context: .
+      dockerfile: src/AuthenticationMicroService/Dockerfile
+    volumes:
+      - /src/Shared/SharedOutput
+      - /packages
+      - /certs:/certs
+
+    ports:
+      - "8082:80"
+      - "8083:443"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "https://+:8083;http://+:8082"
 
   
   # coding-company-microservice:
