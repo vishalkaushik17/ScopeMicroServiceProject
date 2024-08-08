@@ -3,7 +3,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
-
+EXPOSE 8080
+EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
@@ -29,10 +30,9 @@ FROM base AS final
 WORKDIR /app
 
 # Copy the development certificate
-COPY /certs/aspnetcore-devcert.pfx certs/aspnetcore-devcert.pfx
+COPY /certs/aspnetcore-devcert.pfx /certs/aspnetcore-devcert.pfx
 
 # Expose port 5001 for HTTPS
-EXPOSE 80
-EXPOSE 443
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "APIGateway.dll"]

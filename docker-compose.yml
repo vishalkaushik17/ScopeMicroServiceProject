@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   api-gateway:
-    image: apigatewaymicroservice
+    image: apigateway:dev
     build:
       context: .
       dockerfile: src/APIGatewayMicroService/Dockerfile
@@ -11,8 +11,8 @@ services:
       - /certs:/certs
 
     ports:
-      - "8080:80"
-      - "8081:443"
+      - "8080:8080"
+      - "8081:8081"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: "https://+:8081;http://+:8080"
@@ -26,7 +26,7 @@ services:
     #   - ui-microservice
 
   authentication-microservice:
-    image: authenticationmicroservice
+    image: authenticateservice:dev
     build:
       context: .
       dockerfile: src/AuthenticationMicroService/Dockerfile
@@ -36,8 +36,8 @@ services:
       - /certs:/certs
 
     ports:
-      - "8082:80"
-      - "8083:443"
+      - "8082:8082"
+      - "8083:8083"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: "https://+:8083;http://+:8082"

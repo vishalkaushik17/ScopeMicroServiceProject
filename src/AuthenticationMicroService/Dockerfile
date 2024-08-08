@@ -30,6 +30,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
 
+EXPOSE 8082
+EXPOSE 8083
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
@@ -58,7 +61,6 @@ WORKDIR /app
 COPY /certs/aspnetcore-devcert.pfx certs/aspnetcore-devcert.pfx
 
 # Expose port 5001 for HTTPS
-EXPOSE 80
-EXPOSE 443
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "AuthenticateService.dll"]

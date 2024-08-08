@@ -56,7 +56,7 @@ RUN dotnet publish "./AuthenticateService.csproj" -c $BUILD_CONFIGURATION -o /ap
 FROM base AS final
 WORKDIR /app
 # Copy the development certificate
-COPY /certs/aspnetcore-devcert.pfx app/certs/aspnetcore-devcert.pfx
+COPY /certs/aspnetcore-devcert.pfx certs/aspnetcore-devcert.pfx
 # Expose port 5001 for HTTPS
 EXPOSE 8081
 EXPOSE 8080
