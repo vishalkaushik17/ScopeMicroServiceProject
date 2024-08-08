@@ -1,23 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>88365ee6-c451-474f-abea-5e4ff1d54a64</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
-    <!--<DockerfileContext>..\..</DockerfileContext>-->
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>88365ee6-c451-474f-abea-5e4ff1d54a64</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+		<!--<DockerfileContext>..\..</DockerfileContext>-->
+	</PropertyGroup>
 
-  <ItemGroup>
-	  <PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.0.0" />
-	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
-   <PackageReference Include="CC.Identity.Service.Library" Version="1.0.0" />
-   <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.1.1" />
-   <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
-    <PackageReference Include="MMLib.Ocelot.Provider.AppConfiguration" Version="3.0.0" />
-	  <PackageReference Include="Ocelot" Version="23.3.3" />
-	  <PackageReference Include="Ocelot.Provider.Polly" Version="23.3.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.0.0" />
+		<PackageReference Include="CC.Identity.Service.Library" Version="1.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.1.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+		<PackageReference Include="MMLib.Ocelot.Provider.AppConfiguration" Version="3.0.0" />
+		<PackageReference Include="Ocelot" Version="23.3.3" />
+		<PackageReference Include="Ocelot.Provider.Polly" Version="23.3.3" />
+	</ItemGroup>
 </Project>
