@@ -7,6 +7,7 @@
 		<UserSecretsId>88365ee6-c451-474f-abea-5e4ff1d54a64</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<DockerfileContext>..\..</DockerfileContext>
+		<Configurations>Debug;Release;d</Configurations>
 		<!--<DockerfileContext>..\..</DockerfileContext>-->
 	</PropertyGroup>
 

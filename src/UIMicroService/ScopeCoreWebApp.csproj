@@ -3,6 +3,7 @@
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 	<TypeScriptTarget>ES6</TypeScriptTarget>
 	  <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+	  <Configurations>Debug;Release;ddd</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
