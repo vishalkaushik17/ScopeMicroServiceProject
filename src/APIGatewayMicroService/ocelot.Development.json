@@ -1028,7 +1028,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "authentication-microservice",
           "Port": 8083
         }
       ],
@@ -1040,7 +1040,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "authentication-microservice",
           "Port": 8083
         }
       ],
@@ -1052,7 +1052,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "authentication-microservice",
           "Port": 8083
         }
       ],
@@ -1064,7 +1064,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "authentication-microservice",
           "Port": 8083
         }
       ],
@@ -1076,7 +1076,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "authentication-microservice",
           "Port": 8083
         }
       ],
