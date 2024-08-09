@@ -4,7 +4,7 @@
     //Notification Service
     {
       "DownstreamPathTemplate": "/NotificationService/hubs/userCount",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -16,7 +16,7 @@
     },
     {
       "DownstreamPathTemplate": "/NotificationService/api/v1/BrowserNotification/GetNotification",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -28,7 +28,7 @@
     },
     {
       "DownstreamPathTemplate": "/NotificationService/api/v1/BrowserNotification/GetNotifications",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -41,7 +41,7 @@
 
     {
       "DownstreamPathTemplate": "/NotificationService/api/v1/Browser/SendNotification",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -59,7 +59,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -72,7 +72,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -84,7 +84,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -97,7 +97,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -109,7 +109,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -121,7 +121,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookMaster/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -139,7 +139,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -152,7 +152,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -164,7 +164,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -177,7 +177,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -189,7 +189,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -201,7 +201,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/LibraryHall/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -219,7 +219,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -232,7 +232,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -244,7 +244,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -257,7 +257,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -269,7 +269,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -281,7 +281,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/Author/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -298,7 +298,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -311,7 +311,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -323,7 +323,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -336,7 +336,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -348,7 +348,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -360,7 +360,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/mediatype/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -379,7 +379,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -392,7 +392,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -404,7 +404,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -417,7 +417,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -429,7 +429,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -441,7 +441,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/room/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -460,7 +460,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -473,7 +473,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -485,7 +485,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -498,7 +498,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -510,7 +510,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -522,7 +522,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/section/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -539,7 +539,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -552,7 +552,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -564,7 +564,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -577,7 +577,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -589,7 +589,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -601,7 +601,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -617,7 +617,7 @@
     //----------------
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/bookshelf/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -630,7 +630,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/bookshelf/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -642,7 +642,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/bookshelf/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -655,7 +655,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/bookshelf/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -667,7 +667,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/bookshelf/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -679,7 +679,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/rack/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -694,7 +694,7 @@
     //===================book collections
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -707,7 +707,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -719,7 +719,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -732,7 +732,7 @@
 
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -744,7 +744,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -756,7 +756,7 @@
     },
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroService/api/v1/BookCollection/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -773,7 +773,7 @@
     //for library microservice ping
     {
       "DownstreamPathTemplate": "/SchoolLibraryMicroservice/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -788,7 +788,7 @@
     //for DemoRequest
     {
       "DownstreamPathTemplate": "/codingcompanyservice/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -801,7 +801,7 @@
     //Application Db hosting api setup
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -813,7 +813,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/add",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -825,7 +825,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -837,7 +837,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/getall",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -849,7 +849,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -861,7 +861,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/ApplicationHosting/remove",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -877,7 +877,7 @@
 
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getall",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -889,7 +889,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbyany",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -901,7 +901,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbywebsite",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -913,7 +913,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbyrefcode",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -925,7 +925,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbyemail",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -937,7 +937,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbyid",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -949,7 +949,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getbycontactno",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -961,7 +961,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/getallbyreferencecode",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -974,7 +974,7 @@
 
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/requestdemo",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -986,7 +986,7 @@
     },
     {
       "DownstreamPathTemplate": "/codingcompanyservice/api/v1/DemoRequest/activatedemo",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1000,7 +1000,7 @@
     //for email
     {
       "DownstreamPathTemplate": "/messagingservice/api/emailservice/SendEmail",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1012,7 +1012,7 @@
     },
     {
       "DownstreamPathTemplate": "/messagingservice/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1025,11 +1025,11 @@
     //for Authentication Services
     {
       "DownstreamPathTemplate": "/api/v1/Authenticate/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-microservice",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/login",
@@ -1037,11 +1037,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Authenticate/forgot-password",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-microservice",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/forgot-password",
@@ -1049,11 +1049,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Authenticate/verify-email",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-microservice",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/verify-email",
@@ -1061,11 +1061,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Authenticate/account-confirmation",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-microservice",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/account/confirm-me",
@@ -1073,11 +1073,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Authenticate/register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "authentication-microservice",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/register",
@@ -1086,7 +1086,7 @@
 
     {
       "DownstreamPathTemplate": "/api/v1/InitRecords/Init",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1098,11 +1098,11 @@
     },
     {
       "DownstreamPathTemplate": "/authenticateservice/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8083
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/auth-ping",
@@ -1112,7 +1112,7 @@
     //common service
     {
       "DownstreamPathTemplate": "/CommonMicroService/ping",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1126,7 +1126,7 @@
     //Vendor common service
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Vendor/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1138,7 +1138,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Vendor/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1151,7 +1151,7 @@
 
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Vendor/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1163,7 +1163,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Vendor/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1175,7 +1175,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Vendor/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1191,7 +1191,7 @@
     //Currency common service
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1204,7 +1204,7 @@
 
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1216,7 +1216,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1229,7 +1229,7 @@
 
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1241,7 +1241,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1253,7 +1253,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Currency/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1269,7 +1269,7 @@
     //Language common Service
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/language/GetJson",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1282,7 +1282,7 @@
 
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Language/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1294,7 +1294,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Language/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1307,7 +1307,7 @@
 
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Language/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1319,7 +1319,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Language/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1331,7 +1331,7 @@
     },
     {
       "DownstreamPathTemplate": "/CommonMicroService/api/v1/Language/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1346,7 +1346,7 @@
     //Inventory Module Service
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Product/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1358,7 +1358,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Product/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1371,7 +1371,7 @@
 
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Product/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1383,7 +1383,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Product/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1395,7 +1395,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Product/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1407,7 +1407,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Vendor/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1419,7 +1419,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Vendor/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1432,7 +1432,7 @@
 
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Vendor/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1444,7 +1444,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Vendor/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1456,7 +1456,7 @@
     },
     {
       "DownstreamPathTemplate": "/InventoryMicroService/api/v1/Vendor/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1469,7 +1469,7 @@
     //employee microservice
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Employee/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1481,7 +1481,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Employee/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1494,7 +1494,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Employee/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1506,7 +1506,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Employee/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1518,7 +1518,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Employee/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1531,7 +1531,7 @@
     //Degree
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Degree/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1543,7 +1543,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Degree/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1556,7 +1556,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Degree/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1568,7 +1568,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Degree/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1580,7 +1580,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Degree/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1593,7 +1593,7 @@
     //Designation
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Designation/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1605,7 +1605,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Designation/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1618,7 +1618,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Designation/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1630,7 +1630,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Designation/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1642,7 +1642,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Designation/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1655,7 +1655,7 @@
     //Department
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Department/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1667,7 +1667,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Department/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1680,7 +1680,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Department/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1692,7 +1692,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Department/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1704,7 +1704,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Department/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1717,7 +1717,7 @@
     //EmployeeQualification
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/EmployeeQualification/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1729,7 +1729,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/EmployeeQualification/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1742,7 +1742,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/EmployeeQualification/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1754,7 +1754,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/EmployeeQualification/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1766,7 +1766,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/EmployeeQualification/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1779,7 +1779,7 @@
     //EmployeeBank
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Bank/Get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1791,7 +1791,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Bank/GetAll",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1804,7 +1804,7 @@
 
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Bank/Save",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1816,7 +1816,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Bank/Update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -1828,7 +1828,7 @@
     },
     {
       "DownstreamPathTemplate": "/EmployeeMicroService/api/v1/Bank/Delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",

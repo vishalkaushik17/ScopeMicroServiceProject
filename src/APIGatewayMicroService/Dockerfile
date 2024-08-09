@@ -6,7 +6,12 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER root
 
 RUN apt-get update && apt-get install -y curl
-
+RUN apt-get update && apt-get install -y openssl
+#RUN openssl req -new -x509 -nodes -days 365 -out auth-service.crt -keyout auth-service.key -subj "/CN=authentication-microservice"
+## Assuming Debian-based image
+#COPY auth-service.crt /usr/local/share/ca-certificates/
+#RUN update-ca-certificates
+#
 USER app
 WORKDIR /app
 EXPOSE 8080
