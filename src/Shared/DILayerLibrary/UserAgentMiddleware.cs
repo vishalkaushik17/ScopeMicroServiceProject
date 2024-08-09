@@ -1,6 +1,9 @@
 ﻿using GenericFunction.Constants.AppConfig;
-using Microsoft.AspNetCore.Http;
 namespace DependancyInjection;
+
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.Threading.Tasks;
 
 public class UserAgentMiddleware
 {

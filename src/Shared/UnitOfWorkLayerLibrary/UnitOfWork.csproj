@@ -10,7 +10,7 @@
 		<Authors>VISHAL KAUSHIK</Authors>
 		<Company>Coding Company</Company>
 		<Description>UnitOfWork Layer Library.</Description>
-		<PackageTags>tag1;tag2</PackageTags>
+		<PackageTags>Unit of work service</PackageTags>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
 		<OutputPath>..\SharedOutput\</OutputPath>

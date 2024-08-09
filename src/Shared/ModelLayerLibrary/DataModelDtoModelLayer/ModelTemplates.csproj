@@ -3,6 +3,9 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<IncludeSymbols>true</IncludeSymbols>
+		<IncludeSource>true</IncludeSource>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>CC.ModelTemplateLibrary</PackageId>
@@ -10,7 +13,7 @@
 		<Authors>VISHAL KAUSHIK</Authors>
 		<Company>Coding Company</Company>
 		<Description>Model and Dto Template Shared Library.</Description>
-		<PackageTags>tag1;tag2</PackageTags>
+		<PackageTags>Model Templates; Dto Templates</PackageTags>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
 		<OutputPath>..\..\SharedOutput\</OutputPath>

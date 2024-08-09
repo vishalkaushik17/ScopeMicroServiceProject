@@ -30,13 +30,13 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="CC.BL.AuthenticationLibrary" Version="1.0.0" />
-    <PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.0.0" />
-    <PackageReference Include="CC.Generic.Function.Library" Version="1.0.0" />
-    <PackageReference Include="CC.Identity.Service.Library" Version="1.0.0" />
-    <PackageReference Include="CC.Shared.Library.StateAndModelManagement" Version="1.0.0" />
-    <PackageReference Include="CC.UnitOfWorkLayerLibrary" Version="1.0.0" />
-    <PackageReference Include="CC.ViewModelLayerLibrary" Version="1.0.0" />
+    <PackageReference Include="CC.BL.AuthenticationLibrary" Version="1.*" />
+    <PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.*" />
+    <PackageReference Include="CC.Generic.Function.Library" Version="1.*" />
+    <PackageReference Include="CC.Identity.Service.Library" Version="1.*" />
+    <PackageReference Include="CC.Shared.Library.StateAndModelManagement" Version="1.*" />
+    <PackageReference Include="CC.UnitOfWorkLayerLibrary" Version="1.*" />
+    <PackageReference Include="CC.ViewModelLayerLibrary" Version="1.*" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.1.1" />

@@ -2,8 +2,12 @@
 
   <PropertyGroup>
 	  <TargetFramework>net8.0</TargetFramework>
-	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <IncludeSymbols>true</IncludeSymbols>
+	  <IncludeSource>true</IncludeSource>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageId>CC.Generic.Function.Library</PackageId>
 	  <Version>1.0.0</Version>
@@ -51,7 +55,7 @@
     <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
   </ItemGroup>
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <Reference Include="Microsoft.AspNetCore">
       <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\6.0.13\Microsoft.AspNetCore.dll</HintPath>
     </Reference>
@@ -61,7 +65,7 @@
     <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
       <HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\6.0.12\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup>
     <Folder Include="GlobalService\NotificationServices\BrowserNotificationService\Contracts\" />

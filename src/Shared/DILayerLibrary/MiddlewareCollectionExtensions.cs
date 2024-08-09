@@ -19,6 +19,7 @@ namespace DependancyInjection;
 /// </summary>
 public static class MiddlewareCollectionExtensions
 {
+
     /// <summary>
     /// Register middleware for MVC UI.
     /// </summary>
@@ -45,6 +46,8 @@ public static class MiddlewareCollectionExtensions
                     //}
                 }
         });
+        app.UseMiddleware<RequestResponseLoggingMiddleware>();
+
         app.UseRouting();
         app.UseMiddleware<ExceptionHandlingMiddleware>();
         app.UseSession();
@@ -93,6 +96,7 @@ public static class MiddlewareCollectionExtensions
         app.MapGet("/", () => response.ToString());
 
         app.UseHttpsRedirection();
+        app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
         app.UseRouting();
 
@@ -148,6 +152,7 @@ public static class MiddlewareCollectionExtensions
         app.MapGet("/", () => response.ToString());
 
         app.UseHttpsRedirection();
+        app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
         app.UseRouting();
         if (assemblyName.GetName().Name != "APIGateway")

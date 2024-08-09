@@ -12,8 +12,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.0.0" />
-		<PackageReference Include="CC.Identity.Service.Library" Version="1.0.0" />
+		<PackageReference Include="CC.DI.ServiceLayerLibrary" Version="1.*" />
+		<PackageReference Include="CC.Identity.Service.Library" Version="1.*" />
 		<PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.1.1" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
 		<PackageReference Include="MMLib.Ocelot.Provider.AppConfiguration" Version="3.0.0" />

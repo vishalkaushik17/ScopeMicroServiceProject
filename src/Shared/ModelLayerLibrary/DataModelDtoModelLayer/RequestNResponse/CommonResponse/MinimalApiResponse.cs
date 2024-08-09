@@ -1,4 +1,5 @@
 ﻿using GenericFunction;
+using GenericFunction.Constants.AppConfig;
 using System.Globalization;
 using System.Text;
 
@@ -17,13 +18,14 @@ namespace ModelTemplates.RequestNResponse.CommonResponse
         public string HostName { get; set; } = Utility.GetHost();
         public override string ToString()
         {
+
             DateTime = DateTime.Now;
             StringBuilder sb = new StringBuilder();
-            var formattedAmount =String.Format(CultureInfo, "{0:C}", Amount);
+            var formattedAmount = String.Format(CultureInfo, "{0:C}", Amount);
             sb.Append($"Status Success {Status}!\nAssembly Name : {AssemblyName}, Ver : {AssemblyVersion}, " +
                       $"\nCurrent Date Time : {DateTime}\nCulture Language : " +
                       $"{CultureInfo.EnglishName}\nCurrency Format :{formattedAmount}\nHost Ip Address : {IpAddress} \nHost Name : {HostName}");
-            
+            sb.Append($"\nEnvironment :{Environment.GetEnvironmentVariable(SoftwareEnvironment.ASPNETCORE_ENVIRONMENT)}");
             return sb.ToString();
         }
     }

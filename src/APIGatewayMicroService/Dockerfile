@@ -1,6 +1,12 @@
 #See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
+# Switch to root to install tools
+USER root
+
+RUN apt-get update && apt-get install -y curl
+
 USER app
 WORKDIR /app
 EXPOSE 8080
@@ -30,6 +36,7 @@ FROM base AS final
 WORKDIR /app
 
 # Copy the development certificate
+COPY /certs/aspnetcore-devcert.pfx /app/certs/aspnetcore-devcert.pfx
 COPY /certs/aspnetcore-devcert.pfx /certs/aspnetcore-devcert.pfx
 
 # Expose port 5001 for HTTPS
